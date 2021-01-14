@@ -1,0 +1,78 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Press Start 2P', cursive;
+}
+.main{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.bomb{
+  background-image: url("Image/bomb.png");
+  background-position: center;
+  border: dashed 1px black;
+}
+.bloc{
+  border: groove 10px grey;
+}
+.empty{
+  border: dashed 1px black;
+  background-color: #CBCBCB;
+}
+.full{
+  border: outset 2px white;
+  background-color: #E6E6E6;
+
+}
+.hiddenB, .hiddenG, .hiddenR{
+  opacity: 0;
+}
+.hiddenB:hover{
+  opacity: 1;
+  color: blue;
+}
+.hiddenR:hover{
+  opacity: 1;
+  color: red;
+}
+.hiddenG:hover{
+  opacity: 1;
+  color: green;
+}
+.full:hover{
+  border: 0px;
+  background-color: #CBCBCB;
+  border: dashed 1px black;
+}
+.blue{
+  color: blue;
+  border: dashed 1px black;
+  background-color: #CBCBCB;
+}
+.red{
+  color: red;
+  border: dashed 1px black;
+  background-color: #CBCBCB;
+}
+.green{
+  color: green;
+  border: dashed 1px black;
+  background-color: #CBCBCB;
+
+}
+.item {
+  padding-top:5px;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+
+}
